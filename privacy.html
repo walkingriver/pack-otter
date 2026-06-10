@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — PackOtter</title>
+  <meta name="description" content="PackOtter privacy policy. Your trips stay on your device. No account, no analytics, no ads." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo" aria-label="PackOtter home">
+        <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <rect width="32" height="32" rx="8" fill="#0d9488"/>
+          <path d="M8 20c0-4 2.5-7 6-7h4c3.5 0 6 3 6 7v2H8v-2z" fill="#fff" opacity=".9"/>
+          <circle cx="13" cy="12" r="2" fill="#fff"/>
+          <circle cx="19" cy="12" r="2" fill="#fff"/>
+          <rect x="10" y="22" width="12" height="3" rx="1" fill="#ccfbf1"/>
+        </svg>
+        PackOtter
+      </a>
+      <nav aria-label="Main">
+        <ul class="nav-links">
+          <li><a href="index.html#features">Features</a></li>
+          <li><a href="index.html#download" class="btn btn-primary" style="padding: 0.5rem 1rem; font-size: 0.875rem;">Get the app</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-content">
+    <div class="container" style="max-width: 720px;">
+      <a href="index.html" class="back-link">&larr; Back to PackOtter</a>
+      <h1>Privacy Policy</h1>
+      <p><strong>Last updated:</strong> June 2026</p>
+
+      <h2>Summary</h2>
+      <p>PackOtter stores your trips and packing lists <strong>on your device only</strong>. We do not require an account. We do not sell data. We do not use analytics SDKs in v1.</p>
+
+      <h2>Data stored on your device</h2>
+      <ul>
+        <li>Trip names, dates, and packing preferences</li>
+        <li>Checklist items (labels, quantities, checked state)</li>
+        <li>App preferences (onboarding complete, Pro status, AI opt-in)</li>
+      </ul>
+
+      <h2>Data sent over the network</h2>
+      <p><strong>Only when you explicitly tap &ldquo;AI enhance&rdquo;</strong> (and only if you enable AI in Settings):</p>
+      <ul>
+        <li>Structured trip context and current item list are sent to our Cloudflare Worker proxy</li>
+        <li>The proxy forwards a prompt to the configured AI provider</li>
+        <li>We do not persist your trip data on the server</li>
+      </ul>
+      <p><strong>Play Billing:</strong> Google processes purchases; we receive purchase state only.</p>
+
+      <h2>Data we do not collect</h2>
+      <ul>
+        <li>Location / GPS (v1)</li>
+        <li>Contacts, photos, or notification content</li>
+        <li>Advertising identifiers</li>
+      </ul>
+
+      <h2>Export and deletion</h2>
+      <ul>
+        <li>Export any trip as JSON from the trip menu</li>
+        <li>Export all data from Settings</li>
+        <li>Uninstalling the app removes all local data</li>
+      </ul>
+
+      <h2>Contact</h2>
+      <p>Walking River Software — privacy inquiries via <a href="https://github.com/walkingriver/pack-otter/issues">GitHub issues</a> on this repository.</p>
+
+      <h2>Changes</h2>
+      <p>Material changes will be reflected in this document and the in-app privacy link.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>PackOtter by <a href="https://github.com/walkingriver">Walking River Software</a></p>
+    </div>
+  </footer>
+</body>
+</html>
