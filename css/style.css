@@ -1,6 +1,8 @@
 :root {
+  /* Teal is accent/highlight — not large text or button fills at mid luminance */
   --teal: #0d9488;
-  --teal-dark: #0f766e;
+  --teal-dark: #134e4a;
+  --teal-darker: #0f3d38;
   --teal-light: #ccfbf1;
   --slate: #334155;
   --slate-muted: #64748b;
@@ -10,6 +12,10 @@
   --shadow: 0 4px 24px rgba(15, 23, 42, 0.08);
   --radius: 12px;
   --max-width: 1100px;
+  /* WCAG AA: white on --cta-bg ≈ 7.2:1; --cta-bg on white ≈ 7.2:1 for links */
+  --cta-bg: #134e4a;
+  --cta-bg-hover: #0f3d38;
+  --link: #0f5c54;
 }
 
 *,
@@ -37,7 +43,7 @@ img {
 }
 
 a {
-  color: var(--teal);
+  color: var(--link);
   text-decoration: none;
 }
 
@@ -104,7 +110,7 @@ a:hover {
 }
 
 .nav-links a:hover {
-  color: var(--teal);
+  color: var(--teal-dark);
 }
 
 /* Buttons */
@@ -129,15 +135,18 @@ a:hover {
   transform: translateY(-1px);
 }
 
-.btn-primary {
-  background: var(--teal);
+.btn-primary,
+a.btn-primary {
+  background: var(--cta-bg);
   color: var(--white);
-  box-shadow: 0 2px 8px rgba(13, 148, 136, 0.35);
+  box-shadow: 0 2px 8px rgba(15, 61, 56, 0.28);
 }
 
-.btn-primary:hover {
-  background: var(--teal-dark);
+.btn-primary:hover,
+a.btn-primary:hover {
+  background: var(--cta-bg-hover);
   color: var(--white);
+  text-decoration: none;
 }
 
 .btn-secondary {
@@ -147,8 +156,8 @@ a:hover {
 }
 
 .btn-secondary:hover {
-  border-color: var(--teal);
-  color: var(--teal);
+  border-color: var(--teal-dark);
+  color: var(--teal-dark);
 }
 
 .btn svg {
@@ -201,10 +210,10 @@ a:hover {
   display: inline-block;
   padding: 0.25rem 0.75rem;
   background: var(--teal-light);
-  color: var(--teal-dark);
+  color: var(--cta-bg);
   border-radius: 999px;
   font-size: 0.8125rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 /* Phone mockup */
@@ -229,7 +238,7 @@ a:hover {
 }
 
 .mock-header {
-  background: var(--teal);
+  background: var(--cta-bg);
   color: var(--white);
   padding: 1rem 1.25rem;
   font-weight: 600;
@@ -376,7 +385,7 @@ section h2 {
 /* Privacy block */
 
 .privacy-block {
-  background: linear-gradient(135deg, #0f766e 0%, #0d9488 100%);
+  background: linear-gradient(135deg, var(--cta-bg-hover) 0%, var(--cta-bg) 100%);
   color: var(--white);
   border-radius: var(--radius);
   padding: 2.5rem;
@@ -437,7 +446,7 @@ section h2 {
 .price-card .price {
   font-size: 2rem;
   font-weight: 700;
-  color: var(--teal);
+  color: var(--teal-dark);
   margin: 0.5rem 0 1rem;
 }
 
@@ -460,7 +469,7 @@ section h2 {
   content: "✓";
   position: absolute;
   left: 0;
-  color: var(--teal);
+  color: var(--teal-dark);
   font-weight: 700;
 }
 
@@ -483,7 +492,7 @@ section h2 {
 }
 
 .site-footer a:hover {
-  color: var(--teal);
+  color: var(--link);
 }
 
 /* Privacy page */
@@ -493,12 +502,12 @@ section h2 {
 }
 
 .page-content h1 {
-  color: var(--teal);
+  color: var(--teal-dark);
   margin-top: 0;
 }
 
 .page-content h2 {
-  color: var(--teal-dark);
+  color: var(--cta-bg-hover);
   font-size: 1.25rem;
   margin-top: 2rem;
   text-align: left;

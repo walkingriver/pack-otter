@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none" role="img" aria-label="PackOtter">
-  <rect width="32" height="32" rx="8" fill="#0d9488"/>
+  <rect width="32" height="32" rx="8" fill="#f8fafc"/>
   <g transform="translate(16 17.5) scale(0.092) translate(-120 -140)">
     <!-- Tail -->
   <path d="M168 195c28 8 42 32 38 58-2 14-12 24-24 26-18 3-34-10-38-28-6-26 8-48 24-56z" fill="#8B5E3C"/>
