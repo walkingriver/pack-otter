@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 280" fill="none" role="img" aria-label="Cartoon otter carrying a suitcase">
+  <!-- Tail -->
+  <path d="M168 195c28 8 42 32 38 58-2 14-12 24-24 26-18 3-34-10-38-28-6-26 8-48 24-56z" fill="#8B5E3C"/>
+  <path d="M172 210c18 6 28 22 26 40-1 10-8 16-16 17-12 2-22-8-24-22-2-16 6-30 14-35z" fill="#A0714F"/>
+
+  <!-- Back leg -->
+  <ellipse cx="118" cy="232" rx="18" ry="12" fill="#6B4423"/>
+  <ellipse cx="118" cy="228" rx="14" ry="9" fill="#8B5E3C"/>
+
+  <!-- Body -->
+  <ellipse cx="120" cy="175" rx="52" ry="58" fill="#8B5E3C"/>
+  <ellipse cx="120" cy="182" rx="36" ry="42" fill="#C49A6C"/>
+
+  <!-- Front legs -->
+  <ellipse cx="88" cy="210" rx="14" ry="18" fill="#8B5E3C"/>
+  <ellipse cx="152" cy="210" rx="14" ry="18" fill="#8B5E3C"/>
+  <ellipse cx="88" cy="218" rx="11" ry="8" fill="#6B4423"/>
+  <ellipse cx="152" cy="218" rx="11" ry="8" fill="#6B4423"/>
+
+  <!-- Suitcase -->
+  <rect x="78" y="128" width="84" height="58" rx="8" fill="#0d9488"/>
+  <rect x="82" y="132" width="76" height="50" rx="6" fill="#0f766e"/>
+  <rect x="88" y="138" width="64" height="38" rx="4" fill="#14b8a6" opacity="0.35"/>
+  <rect x="108" y="118" width="24" height="14" rx="4" fill="#0d9488"/>
+  <rect x="112" y="120" width="16" height="8" rx="2" fill="#ccfbf1"/>
+  <line x1="120" y1="132" x2="120" y2="186" stroke="#ccfbf1" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  <circle cx="96" cy="192" r="4" fill="#ccfbf1" opacity="0.8"/>
+  <circle cx="144" cy="192" r="4" fill="#ccfbf1" opacity="0.8"/>
+  <rect x="90" y="184" width="12" height="6" rx="3" fill="#115e59"/>
+  <rect x="138" y="184" width="12" height="6" rx="3" fill="#115e59"/>
+
+  <!-- Arms hugging suitcase -->
+  <path d="M74 156c-10 8-14 22-10 34 4 12 16 18 26 14" stroke="#8B5E3C" stroke-width="16" stroke-linecap="round" fill="none"/>
+  <path d="M166 156c10 8 14 22 10 34-4 12-16 18-26 14" stroke="#8B5E3C" stroke-width="16" stroke-linecap="round" fill="none"/>
+  <circle cx="72" cy="192" r="10" fill="#C49A6C"/>
+  <circle cx="168" cy="192" r="10" fill="#C49A6C"/>
+
+  <!-- Head -->
+  <ellipse cx="120" cy="88" rx="46" ry="42" fill="#8B5E3C"/>
+  <ellipse cx="120" cy="96" rx="30" ry="28" fill="#C49A6C"/>
+
+  <!-- Ears -->
+  <ellipse cx="82" cy="58" rx="12" ry="14" fill="#8B5E3C"/>
+  <ellipse cx="158" cy="58" rx="12" ry="14" fill="#8B5E3C"/>
+  <ellipse cx="82" cy="60" rx="7" ry="8" fill="#C49A6C"/>
+  <ellipse cx="158" cy="60" rx="7" ry="8" fill="#C49A6C"/>
+
+  <!-- Face -->
+  <ellipse cx="104" cy="86" rx="7" ry="9" fill="#fff"/>
+  <ellipse cx="136" cy="86" rx="7" ry="9" fill="#fff"/>
+  <circle cx="106" cy="88" r="4.5" fill="#2D1B0E"/>
+  <circle cx="138" cy="88" r="4.5" fill="#2D1B0E"/>
+  <circle cx="107.5" cy="86.5" r="1.5" fill="#fff"/>
+  <circle cx="139.5" cy="86.5" r="1.5" fill="#fff"/>
+  <ellipse cx="120" cy="100" rx="8" ry="6" fill="#6B4423"/>
+  <path d="M112 108c4 5 12 5 16 0" stroke="#6B4423" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Whiskers -->
+  <line x1="68" y1="92" x2="94" y2="94" stroke="#6B4423" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="66" y1="100" x2="94" y2="100" stroke="#6B4423" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="68" y1="108" x2="94" y2="106" stroke="#6B4423" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="172" y1="92" x2="146" y2="94" stroke="#6B4423" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="174" y1="100" x2="146" y2="100" stroke="#6B4423" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="172" y1="108" x2="146" y2="106" stroke="#6B4423" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Little travel cap -->
+  <path d="M88 52c8-14 28-18 44-12 12 4 20 14 20 26h-64c0-6 0-10 0-14z" fill="#0d9488"/>
+  <ellipse cx="120" cy="66" rx="32" ry="6" fill="#115e59"/>
+  <rect x="112" y="38" width="16" height="10" rx="3" fill="#ccfbf1"/>
+</svg>
