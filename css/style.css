@@ -82,7 +82,8 @@ a:hover {
   text-decoration: none;
 }
 
-.logo svg {
+.logo svg,
+.logo img {
   width: 32px;
   height: 32px;
 }
