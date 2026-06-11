@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Import packing list — PackOtter</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">PackOtter</a>
+    </div>
+  </header>
+  <main class="container" style="padding: 2rem 1rem; max-width: 640px;">
+    <h1>Open in PackOtter</h1>
+    <p class="lead">
+      This link contains a shared packing list. Open it on a phone with PackOtter installed.
+    </p>
+    <p>
+      <a href="https://play.google.com/store/apps/details?id=com.walkingriver.packotter" class="btn btn-primary">
+        Get PackOtter on Google Play
+      </a>
+    </p>
+    <p style="margin-top: 2rem; color: #64748b; font-size: 0.875rem;">
+      If PackOtter is installed, this page tries to open the app automatically.
+    </p>
+  </main>
+  <script>
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var payload = params.get("p");
+      if (!payload) return;
+      var custom = "packotter://import?p=" + encodeURIComponent(payload);
+      window.location.replace(custom);
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "WJ94B2HA7U.com.walkingriver.packotter",
+        "paths": [
+          "/pack-otter/import",
+          "/pack-otter/import/*"
+        ]
+      }
+    ]
+  }
+}
