@@ -16,8 +16,18 @@ Open http://localhost:8080
 
 ## Screenshots
 
-Add PNGs under `assets/screenshots/` and uncomment the `<figure>` block in `index.html`.
+Phone screenshots live in `assets/screenshots/` (copied from `pack-otter-app/android/fastlane/metadata/android/en-US/images/phoneScreenshots/`). The homepage tour section (`#tour`) steps through them via `js/tour.js`.
+
+To refresh after re-capturing Play Store assets:
+
+```bash
+cp ../pack-otter-app/android/fastlane/metadata/android/en-US/images/phoneScreenshots/*.png assets/screenshots/
+```
 
 ## Play Store
 
-Update the Google Play link in `index.html` when internal or open testing goes live.
+The Google Play link uses package id `com.walkingriver.packotter`:
+
+`https://play.google.com/store/apps/details?id=com.walkingriver.packotter`
+
+That URL is correct now, but Play will return a “not found” page until at least one release is published on Play Console (internal testing is enough). You do not need to change the link when the app goes live — only if the application id changes.

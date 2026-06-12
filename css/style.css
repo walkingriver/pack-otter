@@ -353,6 +353,116 @@ a.btn-primary:hover {
   color: var(--slate-muted);
 }
 
+/* App tour */
+
+.tour {
+  background: var(--white);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.tour-viewer {
+  max-width: 420px;
+  margin-inline: auto;
+}
+
+.tour-stage {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.tour-phone {
+  margin: 0;
+  background: #1e293b;
+  border-radius: 1.75rem;
+  padding: 0.625rem;
+  box-shadow: var(--shadow), 0 20px 40px rgba(15, 23, 42, 0.1);
+}
+
+.tour-phone img {
+  width: 100%;
+  border-radius: 1.25rem;
+  aspect-ratio: 9 / 20;
+  object-fit: cover;
+  object-position: top;
+  background: var(--white);
+}
+
+.tour-phone figcaption {
+  margin: 0.875rem 0.25rem 0.25rem;
+  text-align: center;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.tour-nav {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--white);
+  color: var(--slate);
+  cursor: pointer;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.tour-nav:hover:not(:disabled) {
+  border-color: var(--teal-dark);
+  color: var(--teal-dark);
+}
+
+.tour-nav:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.tour-nav svg {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+.tour-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  gap: 1rem;
+}
+
+.tour-counter {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--slate-muted);
+}
+
+.tour-dots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.tour-dot {
+  width: 0.625rem;
+  height: 0.625rem;
+  padding: 0;
+  border: none;
+  border-radius: 999px;
+  background: var(--border);
+  cursor: pointer;
+}
+
+.tour-dot.is-active {
+  background: var(--teal-dark);
+  transform: scale(1.15);
+}
+
 /* Sections */
 
 section {
@@ -580,5 +690,19 @@ section h2 {
 
   .hero {
     padding-top: 2rem;
+  }
+
+  .tour-stage {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .tour-nav {
+    display: none;
+  }
+
+  .tour-meta {
+    flex-direction: column;
+    align-items: center;
   }
 }
