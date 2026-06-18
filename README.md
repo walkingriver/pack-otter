@@ -24,6 +24,16 @@ To refresh after re-capturing Play Store assets:
 cp ../pack-otter-app/android/fastlane/metadata/android/en-US/images/phoneScreenshots/*.png assets/screenshots/
 ```
 
+## Sizzle video (screenshots only)
+
+Vertical promo reel built from the same tour frames (~26s, silent, 1080×1920):
+
+```bash
+node scripts/generate-sizzle-video.mjs
+```
+
+Output: `assets/video/packotter-sizzle-9x16.mp4` — slow Ken Burns zoom, crossfades, caption bars. Add music in iMovie/CapCut if you want sound.
+
 ## Play Store
 
 The Google Play link uses package id `com.walkingriver.packotter`:

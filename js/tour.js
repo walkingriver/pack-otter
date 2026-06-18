@@ -23,7 +23,7 @@
     {
       src: "assets/screenshots/05_checklist.png",
       alt: "Generated packing checklist",
-      caption: "Get a tailored packing list",
+      caption: "Get a tailored list — grouped by traveler",
     },
     {
       src: "assets/screenshots/06_checklist_packed.png",
