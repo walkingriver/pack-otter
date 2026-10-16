@@ -706,3 +706,30 @@ section h2 {
     align-items: center;
   }
 }
+
+/* Hero mock section labels */
+.mock-section {
+  padding: 0.625rem 1.25rem 0.25rem;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--teal-dark);
+}
+
+/* Trailer */
+.trailer-frame {
+  max-width: 880px;
+  margin: 0 auto;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow), 0 20px 40px rgba(15, 23, 42, 0.12);
+  background: #0f172a;
+}
+
+.trailer-frame video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}

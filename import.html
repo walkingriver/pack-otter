@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex" />
+  <meta name="referrer" content="no-referrer" />
+  <title>Open shared list — PackOtter</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo" aria-label="PackOtter home">
+        <img src="assets/logo.svg" width="32" height="32" alt="" aria-hidden="true" />
+        PackOtter
+      </a>
+    </div>
+  </header>
+  <main class="page-content">
+    <div class="container" style="max-width: 640px;">
+      <h1>Someone shared a packing list with you</h1>
+      <p class="lead" id="status">Open it in PackOtter on your Android phone.</p>
+      <p>
+        <a id="open-app" class="btn btn-primary" href="#">Open in PackOtter</a>
+      </p>
+      <p>
+        Don't have it yet?
+        <a href="https://play.google.com/store/apps/details?id=com.walkingriver.packotter">Get PackOtter on Google Play</a>,
+        then come back and tap this link again.
+      </p>
+      <p style="margin-top: 2rem; color: var(--slate-muted); font-size: 0.875rem;">
+        The list is inside the link itself. This page does not store or send it anywhere.
+      </p>
+    </div>
+  </main>
+  <script>
+    (function () {
+      var PLAY = "https://play.google.com/store/apps/details?id=com.walkingriver.packotter";
+      var params = new URLSearchParams(window.location.search);
+      var payload = params.get("p");
+      var btn = document.getElementById("open-app");
+      var status = document.getElementById("status");
+      if (!payload) {
+        status.textContent = "This link is missing its list. Ask the sender to share it again.";
+        btn.href = PLAY;
+        btn.textContent = "Get PackOtter";
+        return;
+      }
+      // Use the original host/path: every app version registers it for ACTION_VIEW.
+      var intent =
+        "intent://walkingriver.com/pack-otter/import?p=" + encodeURIComponent(payload) +
+        "#Intent;scheme=https;package=com.walkingriver.packotter;" +
+        "S.browser_fallback_url=" + encodeURIComponent(PLAY) + ";end";
+      var isAndroid = /Android/i.test(navigator.userAgent);
+      if (isAndroid) {
+        btn.href = intent;
+        window.location.replace(intent);
+      } else {
+        btn.href = PLAY;
+        status.textContent = "PackOtter is an Android app. Open this link on your Android phone to import the list.";
+      }
+    })();
+  </script>
+</body>
+</html>

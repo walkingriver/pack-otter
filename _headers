@@ -1,0 +1,7 @@
+/.well-known/assetlinks.json
+  Content-Type: application/json
+  Access-Control-Allow-Origin: *
+
+/import*
+  Referrer-Policy: no-referrer
+  X-Robots-Tag: noindex

@@ -8,6 +8,10 @@
   <meta property="og:title" content="PackOtter — Trip prep checklists" />
   <meta property="og:description" content="The trip prep app that doesn't lose your stuff, doesn't need an account, and doesn't need a subscription." />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://packotter.walkingriver.com/" />
+  <meta property="og:image" content="https://packotter.walkingriver.com/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://packotter.walkingriver.com/" />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
   <link rel="stylesheet" href="css/style.css" />
@@ -21,6 +25,7 @@
       </a>
       <nav aria-label="Main">
         <ul class="nav-links">
+          <li><a href="#trailer" class="nav-hide-mobile">Trailer</a></li>
           <li><a href="#tour" class="nav-hide-mobile">Tour</a></li>
           <li><a href="#features" class="nav-hide-mobile">Features</a></li>
           <li><a href="#pricing" class="nav-hide-mobile">Pricing</a></li>
@@ -44,6 +49,7 @@
             you go — auto-save every edit. No account. No ads.
           </p>
           <div class="hero-cta">
+            <a href="#trailer" class="btn btn-secondary">Watch the trailer</a>
             <a href="#tour" class="btn btn-secondary">Take the tour</a>
             <a href="#features" class="btn btn-secondary">See features</a>
           </div>
@@ -62,28 +68,31 @@
                 <div class="mock-header">PackOtter</div>
                 <div class="mock-trip">
                   <strong>Tokyo — 7 days</strong>
-                  <span>Beach &middot; Carry-on</span>
+                  <span>2 travelers &middot; Flying &middot; Pets</span>
                 </div>
                 <div class="mock-checklist">
+                  <div class="mock-section">Before you leave</div>
                   <div class="mock-item done">
                     <span class="mock-checkbox checked"></span>
-                    Passport &amp; boarding pass
+                    Arrange pet sitter
                   </div>
+                  <div class="mock-item">
+                    <span class="mock-checkbox"></span>
+                    Hold mail / pause deliveries
+                  </div>
+                  <div class="mock-section">Travel logistics</div>
                   <div class="mock-item done">
                     <span class="mock-checkbox checked"></span>
+                    Check in online
+                  </div>
+                  <div class="mock-section">Packing</div>
+                  <div class="mock-item done">
+                    <span class="mock-checkbox checked"></span>
+                    ID / passport
+                  </div>
+                  <div class="mock-item">
+                    <span class="mock-checkbox"></span>
                     Phone charger
-                  </div>
-                  <div class="mock-item">
-                    <span class="mock-checkbox"></span>
-                    Sunscreen SPF 50
-                  </div>
-                  <div class="mock-item">
-                    <span class="mock-checkbox"></span>
-                    Swim trunks
-                  </div>
-                  <div class="mock-item">
-                    <span class="mock-checkbox"></span>
-                    Light rain jacket
                   </div>
                 </div>
               </div>
@@ -99,6 +108,19 @@
       </div>
     </section>
 
+    <section class="trailer" id="trailer">
+      <div class="container">
+        <h2>Watch PackOtter in 30 seconds</h2>
+        <p class="section-lead">Who's going, trip type, before-you-leave prep — then a checklist that saves itself.</p>
+        <div class="trailer-frame">
+          <video controls playsinline preload="metadata" poster="assets/video/packotter-trailer-poster.jpg">
+            <source src="assets/video/packotter-trailer-16x9.mp4" type="video/mp4" />
+            Your browser can't play this video. <a href="assets/video/packotter-trailer-16x9.mp4">Download the trailer</a>.
+          </video>
+        </div>
+      </div>
+    </section>
+
     <section class="tour" id="tour">
       <div class="container">
         <h2>See PackOtter in action</h2>
@@ -109,15 +131,15 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
             </button>
             <figure class="tour-phone">
-              <img src="assets/screenshots/01_home.png" width="360" height="800" data-tour-img alt="PackOtter home screen showing trip list" />
-              <figcaption data-tour-caption>All your trips on one screen</figcaption>
+              <img src="assets/screenshots/02_wizard_travelers.png" width="360" height="800" data-tour-img alt="Trip wizard asking who is traveling" />
+              <figcaption data-tour-caption>Add who's going</figcaption>
             </figure>
             <button type="button" class="tour-nav" data-tour-next aria-label="Next screen">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
             </button>
           </div>
           <div class="tour-meta">
-            <span class="tour-counter" data-tour-counter>1 / 8</span>
+            <span class="tour-counter" data-tour-counter>1 / 4</span>
             <div class="tour-dots" data-tour-dots role="tablist" aria-label="Tour screens"></div>
           </div>
         </div>
@@ -175,6 +197,7 @@
           <p>
             No account. No analytics SDKs. No ads. We don't sell your data.
             Your lists stay on your device — we never upload them to our servers.
+            Pro purchases are processed by Google Play and verified by RevenueCat.
           </p>
           <a href="privacy.html" class="btn btn-secondary">Read the privacy policy</a>
         </div>
@@ -216,7 +239,7 @@
       <p>
         <a href="privacy.html">Privacy</a>
         &middot;
-        <a href="https://github.com/walkingriver/pack-otter-app">App source (private)</a>
+        <a href="https://play.google.com/store/apps/details?id=com.walkingriver.packotter">Google Play</a>
       </p>
     </div>
   </footer>

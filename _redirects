@@ -1,0 +1,2 @@
+# Cloudflare Pages: old GitHub Pages paths -> new domain root
+/pack-otter/*  /:splat  301

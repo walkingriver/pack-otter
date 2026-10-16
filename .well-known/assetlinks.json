@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.walkingriver.packotter",
+      "sha256_cert_fingerprints": [
+        "77:62:30:46:7E:35:08:A9:E8:C8:B9:A2:34:19:E7:39:53:84:A3:26:85:08:47:5F:45:45:6B:E5:55:37:9E:ED",
+        "9D:0B:D1:82:7F:64:50:BE:EA:BC:7B:33:22:AF:FD:BD:56:68:AE:42:DC:4A:1A:59:98:EF:96:4E:45:2B:A1:2E"
+      ]
+    }
+  }
+]
