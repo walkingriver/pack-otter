@@ -1,23 +1,14 @@
 (function () {
-  // Current capture set (android/scripts/capture-play-screenshots.js).
-  var CURRENT = [
-    { src: "assets/screenshots/01_wizard_travelers.png", alt: "Trip wizard asking who is traveling", caption: "Add who's going" },
-    { src: "assets/screenshots/02_wizard_trip_type.png", alt: "Trip wizard for trip type and duration", caption: "Pick the trip type" },
-    { src: "assets/screenshots/03_wizard_before_you_leave.png", alt: "Before you leave step with prep toggles", caption: "Turn on before-you-leave prep" },
-    { src: "assets/screenshots/04_checklist.png", alt: "Generated checklist grouped by traveler", caption: "Get a tailored list in seconds" },
-    { src: "assets/screenshots/05_checklist_packed.png", alt: "Checklist with items checked off", caption: "Check items off as you pack" },
-    { src: "assets/screenshots/06_trip_menu.png", alt: "Trip menu with duplicate, add traveler and archive", caption: "Duplicate, add travelers, or archive" },
-    { src: "assets/screenshots/07_home_trips.png", alt: "Home screen with trip list", caption: "All your trips on one screen" },
-    { src: "assets/screenshots/08_settings.png", alt: "Settings screen", caption: "No account, no ads, no tracking" },
+  // Play Store phone screenshots (pack-otter-app: npm run play:screenshots:site), in app-flow order.
+  var steps = [
+    { src: "assets/screenshots/03_wizard_travelers.png", alt: "Trip wizard asking who is going, with travelers Alex, Sam and Jordan", caption: "Add who's going" },
+    { src: "assets/screenshots/05_wizard_trip_basics.png", alt: "Trip wizard with trip name, trip type and duration", caption: "Name the trip and pick a type" },
+    { src: "assets/screenshots/06_wizard_climate_activities.png", alt: "Trip wizard with climate, activities and options like traveling with kids", caption: "Tune it to the weather and plans" },
+    { src: "assets/screenshots/04_wizard_before_you_leave.png", alt: "Before you leave step with travel and home prep toggles", caption: "Turn on before-you-leave prep" },
+    { src: "assets/screenshots/01_traveler_packing_list.png", alt: "Alex's packing list grouped by category with items checked off", caption: "A packing list for each traveler" },
+    { src: "assets/screenshots/02_before_you_leave_list.png", alt: "Shared list of before-you-leave tasks like arranging a pet sitter", caption: "Prep tasks live with the packing" },
+    { src: "assets/screenshots/07_share_traveler_list.png", alt: "Trip menu with Share Alex's list, Duplicate and Archive", caption: "Share a traveler's list with a link" },
   ];
-  // Older capture set: only the screens without capture glitches.
-  var LEGACY = [
-    { src: "assets/screenshots/02_wizard_travelers.png", alt: "Trip wizard asking who is traveling", caption: "Add who's going" },
-    { src: "assets/screenshots/05_checklist.png", alt: "Generated checklist grouped by traveler", caption: "Get a tailored list in seconds" },
-    { src: "assets/screenshots/07_share_menu.png", alt: "Checklist with items checked off and the trip menu open", caption: "Check items off, then duplicate for next time" },
-    { src: "assets/screenshots/06_checklist_packed.png", alt: "Home screen with trip list", caption: "All your trips on one screen" },
-  ];
-  var steps = LEGACY;
 
   var root = document.querySelector("[data-tour]");
   if (!root) return;
@@ -78,12 +69,4 @@
   });
 
   goTo(0);
-
-  // Switch to the full current set once its screenshots are deployed.
-  var probe = new Image();
-  probe.onload = function () {
-    steps = CURRENT;
-    goTo(0);
-  };
-  probe.src = CURRENT[2].src;
 })();

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /import
+
+Sitemap: https://packotter.walkingriver.com/sitemap.xml
